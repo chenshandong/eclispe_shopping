@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sellerInfoViewParentNew"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/sellerTitleClk"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="@drawable/selector_list_row" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12.0dip"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:text="商家信息"
+            android:textColor="#ff111111"
+            android:textSize="16.0sp" />
+
+        <LinearLayout
+            android:id="@+id/details_dingwei"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            
+             >
+
+            <ImageView
+                android:id="@+id/sellerCounterNew"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="1.0dip"
+                android:src="@drawable/selector_details_dingwei"
+                 />
+
+            <TextView
+                android:id="@+id/sellerStoreTitleNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip"
+                android:drawablePadding="6.0dip"
+                android:includeFontPadding="false"
+                android:text="商家分布"
+                android:textColor="#ffff4978"
+                android:textSize="14.0sp" />
+
+            <ImageView
+                android:id="@+id/sellerArrowNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6.0dip"
+                android:layout_marginRight="12.0dip"
+                android:layout_marginTop="1.0dip"
+                android:src="@drawable/icon_arrows_red_right" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/imageView4"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/tuan_detial_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/sellerBasicInfoClk"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_list_row"
+        android:paddingBottom="15.0dip"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:paddingTop="15.0dip" >
+
+        <TextView
+            android:id="@+id/sellerNameNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/sellerTagNew"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:text="默认文本"
+            android:textColor="#ff111111"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/sellerTagNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="14.0dip"
+            android:layout_marginRight="4.0dip"
+            android:layout_marginTop="2.0dip"
+            android:layout_toLeftOf="@+id/distanceNew"
+            android:background="@drawable/tuan_detail_business_tag1"
+            android:includeFontPadding="false"
+            android:paddingLeft="4.0dip"
+            android:paddingRight="4.0dip"
+            android:text="默认文本"
+            android:textColor="#ffffffff"
+            android:visibility="gone"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/distanceNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/sellerNameNew"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="4.0dip"
+            android:includeFontPadding="false"
+            android:text="默认文本"
+            android:textColor="#ff888888"
+            android:visibility="gone"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/sellerAddressNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/sellerNameNew"
+            android:layout_marginTop="12.0dip"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="3.0dip"
+            android:text="默认文本"
+            android:textColor="#ff888888"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/sellerContentLineNew"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/tuan_detial_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/shareWiFiParentNew"
+        android:layout_width="fill_parent"
+        android:layout_height="43.0dip"
+        android:background="#ffffffff"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip" 
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/shareWiFiTipsNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:baseline="@+id/connectWiFiNew"
+            android:drawableLeft="@drawable/tuan_detail_icon_wifi"
+            android:drawablePadding="10.0dip"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:text="为糯米用户提供免费Wi-Fi"
+            android:textColor="#ff111111"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/connectWiFiNew"
+            android:layout_width="80.0dip"
+            android:layout_height="30.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/cinema_tuan_btn_bg"
+            android:gravity="center"
+            android:padding="0.0dip"
+            android:text="连接Wi-Fi"
+            android:textColor="#ffffffff"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/shareWiFiLineNew"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/tuan_detial_line_color" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/sellerPhoneClk"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_list_row"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/sellerPhoneTextNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/tuan_details_phone"
+                android:drawablePadding="6.0dip"
+                android:includeFontPadding="false"
+                android:text="电话"
+                android:textColor="#ff111111"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vertical1"
+            android:layout_width="1.0px"
+            android:layout_height="fill_parent"
+            android:background="@color/tuan_detial_line_color" />
+
+        <LinearLayout
+            android:id="@+id/sellerEvnClk"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_list_row"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/sellerEvnTextNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/tuan_details_huanjing"
+                android:drawablePadding="6.0dip"
+                android:includeFontPadding="false"
+                android:text="商家环境"
+                android:textColor="#ff111111"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vertical2New"
+            android:layout_width="1.0px"
+            android:layout_height="fill_parent"
+            android:background="@color/tuan_detial_line_color" />
+
+        <LinearLayout
+            android:id="@+id/sellerMovieClk"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_list_row"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/sellerMovie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/tuan_details_paipianbiao"
+                android:drawablePadding="6.0dip"
+                android:includeFontPadding="false"
+                android:text="排片表"
+                android:textColor="#ff111111"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

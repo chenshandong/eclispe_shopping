@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tuanlist_filter_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/tuanlist_filter_bar_height"
+    android:background="@color/tuanlist_filter_background"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="match_parent"
+         />
+    
+
+    <CheckBox
+        android:id="@+id/tuanlist_filter_category"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tuanlist_filter_bar_height"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:button="@null"
+        android:padding="5dp"
+        android:drawableRight="@drawable/tuanlist_filter_bar_item"
+        android:gravity="center"
+        android:text="分类"
+        android:textColor="@color/tuanlist_filter_check_color"
+        android:textSize="13.0sp" />
+
+    <CheckBox
+        android:id="@+id/tuanlist_filter_area"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tuanlist_filter_bar_height"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:button="@null"
+        android:padding="5dp"
+        android:drawableRight="@drawable/tuanlist_filter_bar_item"
+        android:gravity="center"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="区域"
+        android:textColor="@color/tuanlist_filter_check_color"
+        android:textSize="13.0sp" />
+
+    <CheckBox
+        android:id="@+id/tuanlist_filter_sort"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tuanlist_filter_bar_height"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:button="@null"
+        android:drawableRight="@drawable/tuanlist_filter_bar_item"
+        android:gravity="center"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="排序"
+        android:textColor="@color/tuanlist_filter_check_color"
+        android:textSize="13.0sp" />
+
+    <CheckBox
+        android:id="@+id/tuanlist_filter_advance"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tuanlist_filter_bar_height"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:button="@null"
+        android:padding="5dp"
+        android:drawableRight="@drawable/tuanlist_filter_bar_item"
+        android:gravity="center"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="筛选"
+        android:textColor="@color/tuanlist_filter_check_color"
+        android:textSize="13.0sp" />
+    
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="match_parent"
+         />
+
+</LinearLayout>

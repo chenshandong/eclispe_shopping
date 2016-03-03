@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xinbo.fragment.HomeFragment" >
+
+    <include layout="@layout/home_view_title" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/listview_homepage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        ptr:ptrDrawableStart="@drawable/ptr_animate"
+        ptr:ptrHeaderTextColor="@android:color/darker_gray"
+         />
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:background="#ffffff"
+     >
+
+    <TextView
+        android:id="@+id/home_cityname_tv"
+        style="@style/home_city_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/home_searchbar_height"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:maxLength="3"
+        android:ellipsize="end"
+        android:paddingLeft="@dimen/home_city_padding_left"
+        android:text="厦门" />
+
+    <ImageView
+        android:id="@+id/home_city_arrow"
+        android:layout_width="@dimen/home_city_arrow_width"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/home_city_drawable_padding"
+        android:layout_toRightOf="@+id/home_cityname_tv"
+        android:src="@drawable/icon_arrows_red_down" />
+
+    <RelativeLayout
+        android:id="@+id/home_searchbar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/home_searchbar_height"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/home_searchbar_margin"
+        android:layout_toLeftOf="@+id/actionbar_right_icon_container"
+        android:layout_toRightOf="@+id/home_city_arrow"
+        android:background="@drawable/searchbar_bg"
+        android:gravity="center_vertical"
+         >
+
+        <View
+            android:id="@+id/home_searchbar_view"
+            android:layout_width="@dimen/home_searchbar_search_icon_width"
+            android:layout_height="@dimen/home_searchbar_search_icon_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/home_searchbar_view_margin_left"
+            android:background="@drawable/searchbar_icon" />
+
+        <TextView
+            android:id="@+id/home_searchbar_textview"
+            style="@style/home_searchbar_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/home_searchbar_view"
+            android:hint="@string/home_searchbar_default_hint"
+            android:paddingLeft="@dimen/home_searchbar_textview_marginleft"
+            android:paddingRight="@dimen/home_searchbar_textview_marginright" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/actionbar_right_icon_container"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/shoppingcart_actionbar_container" />
+
+        <LinearLayout
+            android:id="@+id/home_qrcode_eventview"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:padding="@dimen/home_title_qr_icon_margin" >
+
+            <ImageView
+                android:id="@+id/img_saoyisao"
+                android:layout_width="@dimen/home_title_qr_icon_width"
+                android:layout_height="@dimen/home_title_qr_icon_height"
+                android:layout_gravity="center"
+                android:src="@drawable/home_saoyisao_selector" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_searchbar_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignRight="@+id/home_searchbar"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:paddingLeft="@dimen/home_searchbar_voice_padding_left" >
+
+        <View
+            android:id="@+id/home_searchbar_voice_split"
+            android:layout_width="1.0px"
+            android:layout_height="@dimen/home_searchbar_voice_split_height"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|right"
+            android:layout_toLeftOf="@+id/home_searchbar_voice"
+            android:background="#ffaaaaad" />
+
+        <ImageView
+            android:layout_width="@dimen/home_searchbar_voice_icon_width"
+            android:layout_height="@dimen/home_searchbar_voice_icon_height"
+            android:layout_gravity="center|right"
+            android:layout_margin="@dimen/home_searchbar_voice_icon_margin"
+            android:src="@drawable/searchbar_voice_selector" />
+    </LinearLayout>
+
+</RelativeLayout>

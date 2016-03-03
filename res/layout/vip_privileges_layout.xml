@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vip_privileges"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginLeft="12.0dip"
+        android:background="#ffcccccc" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip" >
+
+        <ImageView
+            android:id="@+id/vip_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12.0dip"
+            android:src="@drawable/vip_logo" />
+
+        <TextView
+            android:id="@+id/vip_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12.0dip"
+            android:layout_toLeftOf="@+id/vip_arrow_right"
+            android:layout_toRightOf="@+id/vip_logo"
+            android:paddingRight="12.0dip"
+            android:textColor="#ff55555d"
+            android:textSize="13.0sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/vip_privilege_container"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="12.0dip"
+            android:layout_toLeftOf="@+id/vip_arrow_right"
+            android:layout_toRightOf="@+id/vip_logo"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="12.0dip"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/vip_arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="12.0dip"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+
+</LinearLayout>

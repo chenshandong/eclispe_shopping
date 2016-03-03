@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="horizontal" 
+    android:gravity="center"
+    android:background="#F0F0F0"
+        android:padding="6dp"
+    >
+
+    <Button
+        android:id="@+id/btn_details_purchase"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="点击购买" 
+        android:textColor="@color/white"
+        android:background="@drawable/selector_details_purchase_bg"
+        />
+</LinearLayout>

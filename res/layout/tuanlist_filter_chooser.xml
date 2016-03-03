@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/tuanlist_filter_chooser_top_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/tuanlist_filter_divider"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/tuanlist_filter_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tuanlist_filter_bar_height"
+        layout="@layout/tuanlist_filter_bar" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/tuanlist_filter_divider" />
+
+    <LinearLayout
+        android:id="@+id/tuanlist_filter_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/listview_nearby"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            ptr:ptrDrawableStart="@drawable/ptr_animate"
+            ptr:ptrHeaderTextColor="@android:color/darker_gray" >
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    </LinearLayout>
+
+</LinearLayout>

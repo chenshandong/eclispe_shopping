@@ -1,0 +1,250 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.demo.DetailsActivity" >
+
+    <com.example.view.MyScrollView
+        android:id="@+id/scrollView_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_marginBottom="48dp"
+        android:focusableInTouchMode="true"
+        android:focusable="false"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:focusableInTouchMode="true"
+            android:focusable="false"
+            >
+
+            <include layout="@layout/tuan_detail_basic_info_layout"
+                />
+            <LinearLayout
+                android:id="@+id/linear_evaluate"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" 
+                android:orientation="horizontal"
+                android:background="#ffffff"
+                >
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="评价"
+                    android:padding="6dp"
+                    android:layout_gravity="center_vertical" />
+                
+                <RatingBar
+                    android:id="@+id/ratingBar1"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rating="3"
+                    android:layout_gravity="center_vertical"
+                     />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#4280D7"
+                    android:padding="6dp"
+                    android:text="4.7" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical"
+                    android:padding="6dp"
+                    android:text="37人评价 >" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" 
+                android:background="#ffffff">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/EvaluateTextSize"
+                    android:text="味道不错(3)" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/EvaluateTextSize"
+                    android:text="口感不错(5)" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/EvaluateTextSize"
+                    android:text="生意火爆(1)" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/EvaluateTextSize"
+                    android:text="环境还行(2)" />
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" 
+                android:background="#ffffff">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/EvaluateTextSize"
+                    android:text="品质出众(1)" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/EvaluateTextSize"
+                    android:text="味道还行(2)" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/EvaluateTextSize"
+                    android:text="味道一般(3)" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/EvaluateTextSize"
+                    android:text="环境不错(1)" />
+
+            </LinearLayout>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"
+                 >
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="6dp"
+                    android:text="转转乐(枋湖店)" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="6dp"
+                    android:textSize="@dimen/EvaluateTextSize"
+                    android:text="1.3km" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView20"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/textView20"
+                    android:layout_marginTop="8dp"
+                    android:text="厦门市湖里区福建省金湖路5号枋湖客运中心一层"
+                    android:textSize="@dimen/EvaluateTextSize" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/textView22"
+                    android:src="@drawable/ic_phone" />
+
+            </RelativeLayout>
+            
+            <include layout="@layout/notice_seller_menu_consumer_layout"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                 >
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="6dp"
+                    android:text="查看全部评价" />
+            </LinearLayout>
+
+            <com.xinbo.widget.ListView4ScrollView
+                android:id="@+id/listViewscrollView_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                >
+            </com.xinbo.widget.ListView4ScrollView>
+        </LinearLayout>
+    </com.example.view.MyScrollView>
+	
+    <include layout="@layout/groupon_detail_custom_action_bar"
+        android:id="@+id/details_actionbar"/>
+    
+    <include layout="@layout/details_pruchase"
+        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        />
+</FrameLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linear_goodpurchase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/shape_common_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="6dp"
+            android:text="精选专题" />
+
+        <RelativeLayout
+            android:id="@+id/home_t10_vip_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@+id/home_top_10_arrow"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/home_t10_vip_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/home_top_10_arrow"
+                android:gravity="center_vertical"
+                android:text="为您精心挑选"
+                android:textColor="#ff55555d"
+                android:textSize="@dimen/home_t10_vip_desc_text_size" />
+
+            <ImageView
+                android:id="@+id/home_t10_vip_img"
+                android:layout_width="@dimen/home_t10_vip_img_width"
+                android:layout_height="@dimen/home_t10_vip_img_height"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/home_t10_title_vip_img_margin_right"
+                android:layout_toLeftOf="@+id/home_t10_vip_desc"
+                android:paddingTop="@dimen/home_t10_vip_img_margin_top"
+                android:src="@drawable/home_t10_vip_icon" />
+
+            <ImageView
+                android:id="@+id/home_top_10_arrow"
+                android:layout_width="6dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/home_goto_margin_right"
+                android:gravity="center_vertical"
+                android:src="@drawable/arrow_right" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_goodpurchase2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_goodpurchase01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/center01" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:background="#cdcdcd" />
+
+        <ImageView
+            android:id="@+id/img_goodpurchase02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/center02" />
+    </LinearLayout>
+
+	<TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cdcdcd"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+             />
+    
+    <LinearLayout
+        android:id="@+id/linear_goodpurchase3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_goodpurchase03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/center03" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:background="#cdcdcd" />
+
+        <ImageView
+            android:id="@+id/img_goodpurchase04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/center04" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_listview_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/home_grouponlist_title_height"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/shape_common_bg" >
+
+        <TextView
+            style="@style/home_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/home_likeitem_lable_margin_left"
+            android:text="猜你喜欢" />
+
+        <TextView
+            android:id="@+id/home_more_groupon_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/home_goto_arrow_margin_left"
+            android:layout_toLeftOf="@+id/home_more_groupon_arrow"
+            android:background="@drawable/home_common_selector"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:text="全部团购"
+            android:textColor="#ff55555d"
+            android:textSize="@dimen/home_likeitem_more_group_size" />
+
+        <ImageView
+            android:id="@+id/home_more_groupon_arrow"
+            android:layout_width="@dimen/home_goto_arrow_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/home_goto_arrow_margin_bottom"
+            android:layout_marginLeft="@dimen/home_goto_arrow_margin_left"
+            android:layout_marginRight="@dimen/home_goto_margin_right"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+
+</LinearLayout>

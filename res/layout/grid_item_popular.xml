@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <ImageView
+        android:id="@+id/img_popular"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/everyday_big1"
+        android:layout_centerInParent="true"
+         />
+
+    <TextView
+        android:id="@+id/tv_title_popular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/img_popular"
+        android:layout_below="@+id/img_popular"
+        android:padding="3dp"
+        android:textStyle="bold"
+        android:textColor="#666666"
+        android:text="精选特惠" />
+
+    <ImageView
+        android:id="@+id/img_small_popular"
+        android:layout_width="38dp"
+        android:layout_height="47dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignTop="@+id/tv_price_popular"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tv_price_popular"
+        android:src="@drawable/ab_fav_active" />
+
+    <TextView
+        android:id="@+id/tv_like_popular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:textColor="#FFAA25"
+        android:text="000" />
+
+    <TextView
+        android:id="@+id/tv_sale_popular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_title_popular"
+        android:layout_alignBottom="@+id/tv_title_popular"
+        android:layout_alignLeft="@+id/imageView1"
+        android:text="已售"
+        android:textColor="#666666"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_price_popular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tv_title_popular"
+        android:layout_below="@+id/tv_title_popular"
+        android:text="TextView"
+        android:textColor="#FE7AA6" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/featured_titlebar" />
+
+    <me.relex.seamlessviewpagerheader.widget.TouchCallbackLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/tabs_height" />
+
+        <RelativeLayout
+            android:id="@id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!--
+            <include
+                 android:id="@+id/include"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/viewpager_header_height"
+            layout="@layout/headview_feature_everyday" />
+            -->
+
+            <me.relex.seamlessviewpagerheader.widget.SlidingTabLayout
+                android:id="@id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tabs_height"
+                android:layout_below="@+id/viewpager_banner"
+                android:background="#FED791" />
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/viewpager_header_height"
+                android:layout_alignParentTop="true" >
+            </android.support.v4.view.ViewPager>
+
+            <com.example.widget.MyViewPagerIndicator2
+                android:id="@+id/feature_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignBottom="@+id/viewpager_banner"
+                
+                />
+
+        </RelativeLayout>
+    </me.relex.seamlessviewpagerheader.widget.TouchCallbackLayout>
+
+</LinearLayout>

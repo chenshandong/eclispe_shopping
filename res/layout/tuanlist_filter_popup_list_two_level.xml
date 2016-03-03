@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/tuanlist_filter_popup_list_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:background="@color/tuanlist_filter_background"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/tuanlist_filter_popup_list_1_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5" >
+
+            <ListView
+                android:id="@+id/tuanlist_filter_popup_list_1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:background="@color/tuanlist_filter_background"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@color/tuanlist_filter_listitem_divider"
+                android:dividerHeight="1.0px"
+                android:scrollbars="none" />
+
+            <ImageView
+                android:id="@+id/tuanlist_filter_popup_list_1_mask"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="1.0px"
+                android:background="@drawable/tuanlist_filter_mask_left" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tuanlist_filter_popup_list_2_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5" >
+
+            <ListView
+                android:id="@+id/tuanlist_filter_popup_list_2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:background="@color/tuanlist_filter_listitem_two_bg_normal"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@color/tuanlist_filter_listitem_divider"
+                android:dividerHeight="1.0px"
+                android:scrollbars="none" />
+
+            <ImageView
+                android:id="@+id/tuanlist_filter_popup_list_2_mask"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@drawable/tuanlist_filter_mask_right" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/transparent_holder"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:background="#40000000" />
+
+</LinearLayout>

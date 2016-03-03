@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:orientation="vertical"
+    android:background="#ffffff"
+     >
+
+    <ImageView
+        android:id="@+id/map_back"
+        android:layout_width="@dimen/home_title_right_icon_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:padding="11dp"
+        android:src="@drawable/selector_cartback_bg" />
+
+    <TextView
+        android:id="@+id/tv_carttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="商家位置"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/abc_action_bar_title_text_size" />
+
+</RelativeLayout>

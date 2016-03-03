@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffeeeeee"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/mine_main_login" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/mine_gray6" />
+
+        <include layout="@layout/mine_main_coupon_and_unpaid" />
+
+        <include layout="@layout/mine_divide_10dp" />
+
+        <RelativeLayout
+            android:id="@+id/paid_order"
+            android:layout_width="fill_parent"
+            android:layout_height="43.0dip"
+            android:background="@drawable/selector_list_row"
+            android:paddingLeft="12.0dip"
+            android:paddingRight="12.0dip" >
+
+            <TextView
+                android:id="@+id/paid_order_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/mine_main_paid_normal"
+                android:drawablePadding="12.0dip"
+                android:gravity="center_vertical"
+                android:text="订单"
+                android:textColor="@color/mine_black2"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:id="@+id/arrow_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mine_arrow_right" />
+        </RelativeLayout>
+
+        <include layout="@layout/mine_divide_10dp" />
+
+        <RelativeLayout
+            android:id="@+id/paid_vip_area"
+            android:layout_width="fill_parent"
+            android:layout_height="43.0dip"
+            android:background="@drawable/selector_list_row"
+            android:paddingLeft="12.0dip"
+            android:paddingRight="12.0dip" >
+
+            <TextView
+                android:id="@+id/paid_vip_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/mine_vip_member_normal"
+                android:drawablePadding="12.0dip"
+                android:gravity="center_vertical"
+                android:text="VIP会员"
+                android:textColor="@color/mine_black2"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:id="@+id/vip_red_point"
+                android:layout_width="7.0dip"
+                android:layout_height="7.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6.0dip"
+                android:layout_toLeftOf="@+id/paid_vip_tip"
+                android:src="@drawable/mine_red_point"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/paid_vip_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12.0dip"
+                android:layout_toLeftOf="@+id/paid_vip_arrow_right"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:textColor="@color/mine_gray5"
+                android:textSize="13.0sp" />
+
+            <ImageView
+                android:id="@+id/vip_new_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12.0dip"
+                android:layout_toLeftOf="@+id/paid_vip_arrow_right"
+                android:src="@drawable/mine_ic_new"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/paid_vip_arrow_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mine_arrow_right" />
+        </RelativeLayout>
+
+        <include layout="@layout/mine_divide_10dp" />
+
+        <RelativeLayout
+            android:id="@+id/point"
+            android:layout_width="fill_parent"
+            android:layout_height="43.0dip"
+            android:background="@drawable/selector_list_row"
+            android:paddingRight="12.0dip" >
+
+            <TextView
+                android:id="@+id/point_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.0dip"
+                android:drawableLeft="@drawable/mine_point_normal"
+                android:drawablePadding="12.0dip"
+                android:text="积分"
+                android:textColor="@color/mine_black2"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/point_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="12.0dip"
+                android:drawableRight="@drawable/mine_arrow_right"
+                android:textColor="@color/mine_gray5"
+                android:textSize="13.0sp" />
+        </RelativeLayout>
+
+        <include layout="@layout/mine_divide_1px" />
+
+        <RelativeLayout
+            android:id="@+id/balance"
+            android:layout_width="fill_parent"
+            android:layout_height="43.0dip"
+            android:background="@drawable/selector_list_row"
+            android:paddingRight="12.0dip" >
+
+            <TextView
+                android:id="@+id/balance_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.0dip"
+                android:drawableLeft="@drawable/mine_main_balance_normal"
+                android:drawablePadding="12.0dip"
+                android:text="余额"
+                android:textColor="@color/mine_black2"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/mine_my_balance_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/balance_circle"
+                android:layout_toRightOf="@+id/balance_label"
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:text="（充值卡充值）"
+                android:textColor="@color/mine_gray5"
+                android:textSize="13.0sp" />
+
+            <ImageView
+                android:id="@+id/balance_new_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/balance_count"
+                android:src="@drawable/mine_ic_new"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/balance_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2.0dip"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/balance_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="12.0dip"
+                android:drawableRight="@drawable/mine_arrow_right"
+                android:textColor="@color/mine_gray5"
+                android:textSize="13.0sp" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/promo_coupons_divide"
+            layout="@layout/mine_divide_1px"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/promo_coupons"
+            android:layout_width="fill_parent"
+            android:layout_height="43.0dip"
+            android:background="@drawable/selector_list_row"
+            android:paddingRight="12.0dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/promo_coupons_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.0dip"
+                android:drawableLeft="@drawable/mine_main_promo_coupons_normal"
+                android:drawablePadding="12.0dip"
+                android:text="促销券"
+                android:textColor="@color/mine_black2"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/promo_coupons_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="12.0dip"
+                android:drawableRight="@drawable/mine_arrow_right"
+                android:textColor="@color/mine_gray5"
+                android:textSize="13.0sp" />
+        </RelativeLayout>
+
+        <include layout="@layout/mine_divide_1px" />
+
+        <RelativeLayout
+            android:id="@+id/lucky_money"
+            android:layout_width="fill_parent"
+            android:layout_height="43.0dip"
+            android:background="@drawable/selector_list_row"
+            android:paddingLeft="12.0dip"
+            android:paddingRight="12.0dip" >
+
+            <TextView
+                android:id="@+id/lucky_money_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/mine_main_lucky_money_normal"
+                android:drawablePadding="12.0dip"
+                android:gravity="center_vertical"
+                android:text="红包"
+                android:textColor="@color/mine_black2"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/offer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4.0dip"
+                android:layout_toRightOf="@+id/lucky_money_label"
+                android:background="@drawable/mine_lucky_money_discount"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:textColor="@color/mine_pink"
+                android:textSize="11.0sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/lucky_money_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="12.0dip"
+                android:drawableRight="@drawable/mine_arrow_right"
+                android:textColor="@color/mine_gray5"
+                android:textSize="13.0sp" />
+        </RelativeLayout>
+
+        <include layout="@layout/mine_divide_1px" />
+
+        <RelativeLayout
+            android:id="@+id/voucher"
+            android:layout_width="fill_parent"
+            android:layout_height="43.0dip"
+            android:background="@drawable/selector_list_row"
+            android:paddingLeft="12.0dip"
+            android:paddingRight="12.0dip" >
+
+            <TextView
+                android:id="@+id/voucher_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/mine_main_voucher_normal"
+                android:drawablePadding="12.0dip"
+                android:gravity="center_vertical"
+                android:text="抵用券使用说明"
+                android:textColor="@color/mine_black2"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/voucher_new_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18.0dip"
+                android:background="@drawable/voucher_new_bg"
+                android:text="fadsfd"
+                android:textColor="@android:color/white"
+                android:textSize="10.0dip"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/voucher_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18.0dip"
+                android:textColor="@color/mine_gray5"
+                android:textSize="13.0sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="12.0dip"
+                android:src="@drawable/mine_arrow_right" />
+        </RelativeLayout>
+
+        <include layout="@layout/mine_divide_10dp" />
+
+        <RelativeLayout
+            android:id="@+id/settings"
+            android:layout_width="fill_parent"
+            android:layout_height="43.0dip"
+            android:background="@drawable/selector_list_row"
+            android:paddingLeft="12.0dip"
+            android:paddingRight="12.0dip" >
+
+            <TextView
+                android:id="@+id/notify_center_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/mine_settings"
+                android:drawablePadding="12.0dip"
+                android:gravity="center_vertical"
+                android:text="我的糯米_设置点击量"
+                android:textColor="@color/mine_black2"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:id="@+id/notify_center_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mine_arrow_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginBottom="12.0dip"
+            android:background="@color/mine_gray6" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tuan_detail_item_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/consumerTipsTitleNew"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:paddingLeft="12.0dip"
+        android:singleLine="true"
+        android:text="消费提示"
+        android:textColor="#ff111111"
+        android:textSize="16.0sp" />
+
+    <View
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/tuan_detial_line_color" />
+
+    <TextView
+        android:id="@+id/consumerTipsTitleViewNew"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15.0dip"
+        android:layout_marginLeft="12.0dip"
+        android:layout_marginRight="12.0dip"
+        android:layout_marginTop="15.0dip"
+        android:background="#ffffffff"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="3.0dip"
+        android:text="默认文本"
+        android:textColor="#ff666666"
+        android:visibility="gone"
+        android:textSize="14.0sp" />
+
+    <LinearLayout
+        android:id="@+id/consumerTipsStructLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <WebView
+            android:id="@+id/webView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.fragment.NearbyFragment" >
+
+    <include layout="@layout/nearby_titlebar_layout" />
+	<include layout="@layout/tuanlist_filter_chooser"/>
+</LinearLayout>

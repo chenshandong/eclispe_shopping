@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tuan_detail_basic_info_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/titleBGNew"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/titleBGImageNew"
+            android:layout_width="fill_parent"
+            android:layout_height="190.0dip"
+            android:src="@drawable/banner04"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/groupon_detail_gradation_line"
+            android:paddingTop="20.0dip" >
+
+            <TextView
+                android:id="@+id/groupon_detail_text_view_num_sold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/groupon_detail_text_view_title"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="18.0dip"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingRight="12.0dip"
+                android:text="已售%1$d"
+                android:textColor="#ffffffff"
+                android:visibility="gone"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/groupon_detail_text_view_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginLeft="12.0dip"
+                android:layout_toLeftOf="@+id/groupon_detail_text_view_num_sold"
+                android:gravity="center|left"
+                android:includeFontPadding="false"
+                android:text="99元"
+                android:textColor="#ffffffff"
+                android:textSize="18.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/groupon_detail_text_view_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/groupon_detail_text_view_title"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="12dp"
+                android:maxLines="2"
+                android:text="120元"
+                android:textColor="#ffffffff"
+                android:textSize="14dp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <View
+        android:id="@+id/buyTopLineNew"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="#ffcccccc" />
+
+    <include
+        android:id="@+id/tuan_detail_buy"
+        layout="@layout/tuan_detail_buy" />
+
+    <TableLayout
+        android:id="@+id/protectionTableNew"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" />
+
+    <View
+        android:id="@+id/basicBottomLineNew"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginBottom="10.0dip"
+        android:background="@color/tuan_detial_line_color" />
+
+</LinearLayout>

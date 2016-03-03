@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reserveTipParentNew"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/reserveTipIconNew"
+            android:layout_width="15.166992dip"
+            android:layout_height="14.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12.0dip"
+            android:layout_marginTop="10.0dip"
+            android:src="@drawable/tuan_detail_reserve" />
+
+        <TextView
+            android:id="@+id/reserveTipNew"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/reserveTipIconNew"
+            android:paddingBottom="6.0dip"
+            android:paddingLeft="4.0dip"
+            android:paddingRight="12.0dip"
+            android:paddingTop="8.0dip"
+            android:text="默认文本"
+            android:textColor="#ff888888"
+            android:textSize="12.0sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="6.0dip" />
+
+</LinearLayout>

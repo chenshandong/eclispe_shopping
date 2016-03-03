@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tuan_float_buy_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlActionBuy"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tuan_detail_buy_button_height"
+        android:layout_marginBottom="6.0dip"
+        android:layout_marginTop="6.0dip"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip" >
+
+        <LinearLayout
+            android:id="@+id/actionBuyClk"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/red_btn_bg"
+            android:gravity="center"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/actionBuyPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10.0dip"
+                android:includeFontPadding="false"
+                android:textColor="@color/tuan_detial_btn_buy_enable_txt_color"
+                android:textSize="18.0sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/actionBuyNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="立即抢购"
+                android:textColor="@color/tuan_detial_btn_buy_enable_txt_color"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@+id/actionBuyClk"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:paddingTop="2.0dip" >
+
+            <TextView
+                android:id="@+id/moneyIconNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtMoneyCountsNew"
+                android:layout_alignParentLeft="true"
+                android:includeFontPadding="false"
+                android:text="¥"
+                android:textColor="#ffff4683"
+                android:textSize="28.0sp" />
+
+            <TextView
+                android:id="@+id/txtMoneyCountsNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_marginLeft="5.0dip"
+                android:layout_toRightOf="@+id/moneyIconNew"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="默认"
+                android:textColor="#ffff4683"
+                android:textSize="34.0sp" />
+
+            <TextView
+                android:id="@+id/promo_price_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/txtMoneyCountsNew"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/txtMoneyCountsNew"
+                android:includeFontPadding="false"
+                android:text="原价"
+                android:textColor="#ff88888d"
+                android:textSize="13.0sp" />
+
+            <TextView
+                android:id="@+id/originalPriceNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtMoneyCountsNew"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/promo_price_label"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="元"
+                android:textColor="#ff88888d"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/shoppingcart_promo_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtMoneyCountsNew"
+                android:layout_marginLeft="5.0dip"
+                android:layout_toRightOf="@+id/originalPriceNew"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:textColor="#ff88888d"
+                android:textSize="15.0sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_details_salecount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:text="已售" />
+
+    </RelativeLayout>
+
+    <ViewStub
+        android:id="@+id/vip_privileges"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/vip_privileges_layout" />
+
+    <View
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginLeft="12.0dip"
+        android:background="#ffcccccc" />
+
+    <ViewStub
+        android:id="@+id/activity_countdown"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/activity_countdown_layout" />
+
+    <RelativeLayout
+        android:id="@+id/tipParentNew"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="44.0dip"
+        android:padding="12.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/arrow" >
+
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="wrap_content"
+                android:layout_height="16.0dip"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="优惠"
+                android:textColor="#ff88888d"
+                android:textSize="13.0sp" />
+
+            <RelativeLayout
+                android:id="@+id/privilegeTipParentNew"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="12.0dip" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_arrows_gray_right" />
+    </RelativeLayout>
+
+    <ViewStub
+        android:id="@+id/reserve_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/reserve_tip_layout" />
+
+    <View
+        android:id="@+id/privilegeTipBottomLineNew"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginLeft="12.0dip"
+        android:background="#ffcccccc" />
+
+</LinearLayout>

@@ -1,0 +1,135 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+	<!-- 注册 -->
+    <style name="Register_Input">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/base_edit_input</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+    
+    <style name="Smile">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+     <style name="Smile.TextView">
+        <item name="android:textSize">18sp</item>
+    </style>
+    
+     
+    <style name="Smile.TextView._Black">
+        <item name="android:textColor">#3e3e39</item>
+    </style>
+    
+    <style name="Register_Edit">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+    
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="home_textview">
+        <item name="android:ellipsize">end</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    
+    <style name="home_city_textview" parent="@style/home_textview">
+        <item name="android:textSize">@dimen/home_city_font_size</item>
+        <item name="android:textColor">@color/home_city_color</item>
+        <item name="android:maxWidth">@dimen/home_city_max_width</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+     <style name="home_searchbar_textview" parent="@style/home_textview">
+        <item name="android:textSize">@dimen/home_searchbar_textview_font_size</item>
+        <item name="android:textColorHint">@color/home_search_text_hint</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+     <style name="home_title_textview" parent="@style/home_textview">
+        <item name="android:textSize">@dimen/home_likeitem_lable_font_size</item>
+        <item name="android:textColor">@color/home_text_black</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+     <style name="groupon_container">
+        <item name="android:paddingLeft">@dimen/groupon_listitem_paddingleft</item>
+        <item name="android:paddingTop">@dimen/groupon_listitem_paddingtop</item>
+        <item name="android:paddingRight">@dimen/groupon_listitem_paddingright</item>
+        <item name="android:paddingBottom">@dimen/groupon_listitem_paddingbottom</item>
+    </style>
+    
+     <style name="groupon_listitem_icon">
+        <item name="android:layout_width">@dimen/groupon_listitem_icon_width</item>
+        <item name="android:layout_height">@dimen/groupon_listitem_icon_height</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    
+     <style name="groupon_listitem_title" parent="@style/groupon_listitem_superbig_textview">
+        <item name="android:textColor">@color/groupon_title_text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">12</item>
+    </style>
+    
+    <style name="groupon_listitem_superbig_textview" parent="@style/groupon_listitem_textview">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    
+    <style name="groupon_listitem_textview">
+        <item name="android:ellipsize">end</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    
+    <style name="groupon_listitem_upperright_coner_tv" parent="@style/groupon_listitem_small_textview">
+        <item name="android:textColor">@color/groupon_text</item>
+    </style>
+    
+    <style name="groupon_listitem_small_textview" parent="@style/groupon_listitem_textview">
+        <item name="android:textSize">11.0sp</item>
+    </style>
+    
+    <style name="groupon_listitem_subtitle" parent="@style/groupon_listitem_big_textview">
+        <item name="android:textColor">@color/groupon_subtitle_text</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:maxLength">23</item>
+    </style>
+    
+    <style name="groupon_listitem_big_textview" parent="@style/groupon_listitem_textview">
+        <item name="android:textSize">12.0sp</item>
+    </style>
+    
+    <style name="groupon_listitem_price" parent="@style/groupon_listitem_superbig_textview">
+        <item name="android:textColor">@color/groupon_activity_price</item>
+    </style>
+    
+    <style name="groupon_listitem_salecount" parent="@style/groupon_listitem_small_textview">
+        <item name="android:textColor">@color/groupon_text</item>
+    </style>
+    
+    <style name="popupanime">
+        <item name="android:windowEnterAnimation">@anim/enter</item>
+        <item name="android:windowExitAnimation">@anim/exit</item>
+    </style>
+</resources>

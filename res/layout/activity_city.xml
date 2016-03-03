@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.model.MainActivity" >
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/listview_allcities"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rela_search"
+        android:layout_toLeftOf="@+id/myLetterSideBar1"
+        ptr:ptrDrawable="@drawable/ptr_animate"
+        >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    
+    <LinearLayout
+        android:id="@+id/linear_searchresult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rela_search"
+        android:layout_toLeftOf="@+id/myLetterSideBar1"
+        android:background="#F3F3F3"
+        android:orientation="horizontal" 
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/tv_searchresult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索结果"
+            android:padding="8dp"
+             />
+
+    </LinearLayout>
+    
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ppr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/listview_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear_searchresult"
+        android:layout_toLeftOf="@+id/myLetterSideBar1"
+        ppr:ptrDrawable="@drawable/ptr_animate"
+        >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <com.example.demo.MyLetterSideBar
+        android:id="@+id/myLetterSideBar1"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#F3F3F3" />
+
+    <TextView
+        android:id="@+id/tv_suoyi"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:background="#cdcdcd"
+        android:gravity="center"
+        android:text="A"
+        android:visibility="gone" 
+        />
+
+    <RelativeLayout
+        android:id="@+id/rela_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/myLetterSideBar1"
+        android:padding="6dp"
+         >
+
+        <EditText
+            android:id="@+id/edit_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/cityselect_search_icon"
+            android:drawablePadding="8dp"
+            android:background="@drawable/bg_edittext_searchcity"
+            android:ems="10"
+            android:textSize="14dp"
+            android:hint="请输入城市中文名称或拼音" />
+    </RelativeLayout>
+
+</RelativeLayout>

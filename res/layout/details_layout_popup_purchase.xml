@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55000000"
+     >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="300dp"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/img_gotopuchase"
+            android:scaleType="fitXY"
+            android:padding="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="6dp"
+            android:src="@drawable/selector_cha" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:background="#F0F0F0"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="6dp" >
+
+            <Button
+                android:id="@+id/btn_details_gouwuche"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_details_gouwuche_bg"
+                android:textColor="@color/white"
+                android:text="加入购物车" />
+            
+            
+            <View
+                android:id="@+id/imageView1"
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                 />
+            
+            
+            <Button
+                android:id="@+id/btn_details_comfir"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_details_purchase_bg"
+                android:text="立即支付"
+                android:layout_weight="1"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_gotopuchase"
+            android:layout_width="126dp"
+            android:layout_height="96dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_gotoprice"
+            style="@style/groupon_listitem_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_toRightOf="@+id/img_gotopuchase"
+            android:includeFontPadding="false"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="15dp"
+            android:text="888"
+            android:textSize="22dp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_gotodetails"
+            android:layout_marginTop="38dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="购买数量"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dp" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#33cdcdcd"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/img_jian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/selector_jian" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_gotobuycount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#33cdcdcd"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/img_jia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/selector_jia" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_gotototal"
+            style="@style/groupon_listitem_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="15dp"
+            android:includeFontPadding="false"
+            android:text="合计："
+            android:layout_marginLeft="20dp"
+            android:textSize="19dp" />
+
+        <TextView
+            android:id="@+id/tv_gotodetails"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:layout_alignLeft="@+id/tv_gotototal"
+            android:layout_below="@+id/img_gotopuchase"
+            android:layout_marginTop="38dp"
+            android:includeFontPadding="false"
+            android:textColor="#ffff0000"
+            android:textSize="14dp"
+            android:text="这是测试用例这是测试用例这是测试" />
+
+        <TextView
+            android:id="@+id/tv_gotosalecount"
+            style="@style/groupon_listitem_salecount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_gotoprice"
+            android:layout_below="@+id/tv_gotoprice"
+            android:text="saleCount"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

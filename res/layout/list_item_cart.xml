@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     >
+
+	<RelativeLayout
+	    android:id="@+id/home_listview_title"
+	    android:layout_width="fill_parent"
+	    android:layout_height="@dimen/home_grouponlist_title_height"
+	    android:layout_marginTop="6dp"
+	    android:background="@drawable/shape_common_bg" >
+
+	    <TextView
+	        android:id="@+id/tv_cartshopname"
+	        style="@style/home_title_textview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_toRightOf="@+id/imageView1"
+	        android:layout_marginLeft="8dp"
+	        android:textSize="14dp"
+	        android:text="name" />
+
+	    <TextView
+	        android:id="@+id/home_more_groupon_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="@dimen/home_goto_arrow_margin_left"
+	        android:layout_toLeftOf="@+id/home_more_groupon_arrow"
+	        android:background="@drawable/home_common_selector"
+	        android:ellipsize="end"
+	        android:includeFontPadding="false"
+	        android:singleLine="true"
+	        android:text="查看详情"
+	        android:textColor="#ff55555d"
+	        android:textSize="13dp" />
+
+	    <ImageView
+	        android:id="@+id/home_more_groupon_arrow"
+	        android:layout_width="@dimen/home_goto_arrow_width"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginBottom="@dimen/home_goto_arrow_margin_bottom"
+	        android:layout_marginLeft="@dimen/home_goto_arrow_margin_left"
+	        android:layout_marginRight="@dimen/home_goto_margin_right"
+	        android:src="@drawable/arrow_right" />
+
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_centerVertical="true"
+	        android:scaleType="fitXY"
+	        android:layout_marginLeft="8dp"
+	        android:src="@drawable/legou" />
+	</RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/main_container"
+        style="@style/groupon_container"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/home_listview_title"
+        android:layout_height="@dimen/groupon_listitem_height"
+        android:background="@drawable/card_frame"
+        android:layout_marginBottom="8dp"
+         >
+
+        <ImageView
+            android:id="@+id/img_cartshop"
+            style="@style/groupon_listitem_icon"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_launcher"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:id="@+id/groupon_listitem_title_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/groupon_listitem_title_margin_bottom"
+            android:layout_marginLeft="@dimen/groupon_listitem_icon_marginright"
+            android:layout_toRightOf="@+id/img_cartshop" >
+
+            <TextView
+                android:id="@+id/groupon_listitem_title_labelview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:paddingLeft="5.0dip" />
+
+            <TextView
+                android:id="@+id/groupon_listitem_upperright_coner_tv"
+                style="@style/groupon_listitem_upperright_coner_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:includeFontPadding="false"
+                android:paddingLeft="8.0dip"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_cartprice"
+            style="@style/groupon_listitem_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_cartshop"
+            android:layout_alignLeft="@+id/tv_cartsubtitle"
+            android:layout_marginRight="5.0dip"
+            android:includeFontPadding="false"
+            android:text="888" />
+
+        <TextView
+            android:id="@+id/groupon_listitem_tuan_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_cartshop"
+            android:layout_marginBottom="2.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_toRightOf="@+id/tv_cartprice"
+            android:background="@drawable/groupon_salel_activity_bg"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:minHeight="@dimen/groupon_special_label_min_height"
+            android:paddingLeft="2.5dip"
+            android:paddingRight="2.5dip"
+            android:text="手机专享价"
+            android:textColor="#ffff4683"
+            android:textSize="9.0sp" />
+
+        <TextView
+            android:id="@+id/tv_cartcount"
+            style="@style/groupon_listitem_salecount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_cartshop"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="2.0dip"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:text="x220" />
+
+        <ImageView
+            android:id="@+id/groupon_listitem_upperleft_coner_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/img_cartshop"
+            android:layout_alignTop="@+id/img_cartshop"
+            android:scaleType="fitXY"
+            android:src="@drawable/groupon_ic_free_appoint" />
+
+        <TextView
+            android:id="@+id/tv_cartsubtitle"
+            style="@style/groupon_listitem_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/groupon_listitem_upperleft_coner_img"
+            android:layout_alignLeft="@+id/groupon_listitem_title_view"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0.0dip"
+            android:text="这是测试用例这是测试用例这是测试用例这是测试用例" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

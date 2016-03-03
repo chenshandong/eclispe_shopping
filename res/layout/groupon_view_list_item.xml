@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/header_divide_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="#ffd9d9d9"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/main_container"
+        style="@style/groupon_container"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/groupon_listitem_height"
+        android:background="@drawable/selector_list_row" >
+
+        <ImageView
+            android:id="@+id/groupon_listitem_icon"
+            style="@style/groupon_listitem_icon"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_launcher"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:id="@+id/groupon_listitem_title_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/groupon_listitem_title_margin_bottom"
+            android:layout_marginLeft="@dimen/groupon_listitem_icon_marginright"
+            android:layout_toRightOf="@+id/groupon_listitem_icon" >
+
+            <TextView
+                android:id="@+id/groupon_listitem_title"
+                style="@style/groupon_listitem_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123"
+                android:includeFontPadding="false" />
+
+            <TextView
+                android:id="@+id/groupon_listitem_title_labelview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:paddingLeft="5.0dip" />
+
+            <TextView
+                android:id="@+id/groupon_listitem_upperright_coner_tv"
+                style="@style/groupon_listitem_upperright_coner_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:includeFontPadding="false"
+                android:paddingLeft="8.0dip"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/groupon_listitem_subtitle"
+            style="@style/groupon_listitem_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/groupon_listitem_title_view"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/groupon_listitem_title_view"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0.0dip"
+            android:text="这是测试用例这是测试用例这是测试用例这是测试用例" />
+
+        <TextView
+            android:id="@+id/groupon_listitem_activity_groupon"
+            style="@style/groupon_listitem_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/groupon_listitem_icon"
+            android:layout_alignLeft="@+id/groupon_listitem_subtitle"
+            android:layout_marginRight="5.0dip"
+            android:includeFontPadding="false"
+            android:text="888" />
+
+        <TextView
+            android:id="@+id/groupon_listitem_activity_market"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/groupon_listitem_activity_groupon"
+            android:layout_marginRight="6.0dip"
+            android:layout_toRightOf="@+id/groupon_listitem_activity_groupon"
+            android:includeFontPadding="false"
+            android:text="999"
+            android:textColor="@color/groupon_activity_price_market"
+            android:textSize="11.0sp" />
+
+        <TextView
+            android:id="@+id/groupon_listitem_tuan_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/groupon_listitem_icon"
+            android:layout_marginBottom="2.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_toRightOf="@+id/groupon_listitem_activity_market"
+            android:background="@drawable/groupon_salel_activity_bg"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:minHeight="@dimen/groupon_special_label_min_height"
+            android:paddingLeft="2.5dip"
+            android:paddingRight="2.5dip"
+            android:text="会员再减1元"
+            android:textColor="#ffff4683"
+            android:textSize="9.0sp" />
+
+        <TextView
+            android:id="@+id/groupon_listitem_salecount_tuanlist"
+            style="@style/groupon_listitem_salecount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/groupon_listitem_icon"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="2.0dip"
+            android:text="saleCount" />
+
+        <ImageView
+            android:id="@+id/groupon_listitem_upperleft_coner_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/groupon_listitem_icon"
+            android:layout_alignTop="@+id/groupon_listitem_icon"
+            android:scaleType="fitXY"
+            android:src="@drawable/groupon_ic_free_appoint" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/divide_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/list_row_normal"
+        android:src="#ffd9d9d9" />
+
+</LinearLayout>
